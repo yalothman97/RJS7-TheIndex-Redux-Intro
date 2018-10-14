@@ -18,6 +18,7 @@ class AuthorCard extends Component {
             </h5>
             <small className="card-text">{this.props.books.length} books</small>
           </div>
+          <button className="btn btn-danger"> DELETE</button>
         </div>
       </div>
     );
