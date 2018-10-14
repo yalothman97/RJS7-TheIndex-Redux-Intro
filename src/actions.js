@@ -1,13 +1,13 @@
 const ADD_AUTHOR = "ADD_AUTHOR";
 const DELETE_AUTHOR = "DELETE_AUTHOR";
 
-export const add_author = () => {
+export const addAuthor = () => {
   return {
     type: ADD_AUTHOR
   };
 };
 
-export const delete_author = author => {
+export const deleteAuthor = author => {
   return {
     type: DELETE_AUTHOR,
     payload: author
