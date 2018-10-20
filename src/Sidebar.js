@@ -17,11 +17,6 @@ function Sidebar(props) {
     </div>
   );
 }
-const mapStateToProps = state => {
-  return {
-    newAuthId: state.newAuthorId
-  };
-};
 
 const mapDispatchToProps = dispatch => {
   return {
@@ -30,6 +25,6 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(Sidebar);
