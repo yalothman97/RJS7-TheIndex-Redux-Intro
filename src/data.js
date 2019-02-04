@@ -1,5 +1,6 @@
 const authors = [
   {
+    id: 1,
     first_name: "J.K.",
     last_name: "Rowling",
     imageUrl:
@@ -36,6 +37,7 @@ const authors = [
     ]
   },
   {
+    id: 2,
     first_name: "George R.R.",
     last_name: "Martin",
     imageUrl:
@@ -64,6 +66,7 @@ const authors = [
     ]
   },
   {
+    id: 3,
     first_name: "J.R.R",
     last_name: "Tolkein",
     imageUrl:
@@ -92,6 +95,7 @@ const authors = [
     ]
   },
   {
+    id: 4,
     first_name: "Naguib",
     last_name: "Mahfouz",
     imageUrl:

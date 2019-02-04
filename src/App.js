@@ -10,13 +10,14 @@ import AuthorsList from "./AuthorsList";
 class App extends Component {
   state = {
     authors: authors,
-    newAuthorId: 1
+    newAuthorId: 5
   };
 
   addAuthor = () => {
     const newAuthor = {
+      id: this.state.newAuthorId,
       first_name: "Author",
-      last_name: `${this.state.newAuthorId}`,
+      last_name: "McAuthorFace",
       imageUrl:
         "https://www.netz.de/images/2016-11-21-firefox-focus-header-58cfedd908c25_500_300.jpg",
       books: [
