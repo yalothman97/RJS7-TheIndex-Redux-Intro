@@ -2,21 +2,23 @@ import React, { Component } from "react";
 
 class AuthorCard extends Component {
   render() {
+    const author = this.props.author;
+    const authorName = `${author.first_name} ${author.last_name}`;
     return (
       <div className="col-lg-4 col-md-6 col-12">
         <div className="card">
           <div className="image">
             <img
               className="card-img-top img-fluid"
-              src={this.props.imageUrl}
-              alt={this.props.first_name + " " + this.props.last_name}
+              src={author.imageUrl}
+              alt={authorName}
             />
           </div>
           <div className="card-body">
             <h5 className="card-title">
-              <span>{this.props.first_name + " " + this.props.last_name}</span>
+              <span>{authorName}</span>
             </h5>
-            <small className="card-text">{this.props.books.length} books</small>
+            <small className="card-text">{author.books.length} books</small>
           </div>
           <button className="btn btn-danger"> DELETE</button>
         </div>
