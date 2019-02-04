@@ -10,9 +10,7 @@ class Sidebar extends Component {
             <button>AUTHORS</button>
           </h4>
           <h4 className="menu-item">
-            <button onClick={() => this.props.addAuthorHandler()}>
-              + ADD AUTHOR
-            </button>
+            <button onClick={this.props.addAuthorHandler}>+ ADD AUTHOR</button>
           </h4>
         </section>
       </div>

@@ -8,17 +8,13 @@ import Sidebar from "./Sidebar";
 import AuthorsList from "./AuthorsList";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      authors: authors,
-      newAuthorId: 1
-    };
-    this.addAuthor = this.addAuthor.bind(this);
-  }
+  state = {
+    authors: authors,
+    newAuthorId: 1
+  };
 
-  addAuthor() {
-    let newAuthor = {
+  addAuthor = () => {
+    const newAuthor = {
       first_name: "Author",
       last_name: `${this.state.newAuthorId}`,
       imageUrl:
@@ -34,7 +30,8 @@ class App extends Component {
       authors: this.state.authors.concat(newAuthor),
       newAuthorId: this.state.newAuthorId + 1
     });
-  }
+  };
+
   render() {
     return (
       <div id="app" className="container-fluid">
