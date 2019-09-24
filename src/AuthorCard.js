@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { deleteAuthor } from "./actions";
+import { deleteAuthor } from "./stores/actions";
 
 function AuthorCard(props) {
   const author = props.author;
