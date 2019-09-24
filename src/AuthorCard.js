@@ -19,8 +19,8 @@ class AuthorCard extends Component {
               <span>{authorName}</span>
             </h5>
             <small className="card-text">{author.books.length} books</small>
+            <button className="btn btn-danger btn-block">DELETE</button>
           </div>
-          <button className="btn btn-danger"> DELETE</button>
         </div>
       </div>
     );
