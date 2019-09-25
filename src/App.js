@@ -41,7 +41,7 @@ class App extends Component {
             <Sidebar addAuthorHandler={this.addAuthor} />
           </div>
           <div className="content col-10">
-            <AuthorsList authors={this.state.authors} />
+            <AuthorsList />
           </div>
         </div>
       </div>
